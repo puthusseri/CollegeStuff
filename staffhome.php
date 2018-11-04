@@ -3,9 +3,14 @@
 
 
 <div class="topnav">
+  <a href="#"  id = "listbooks">List Books</a>
+  <a href="#"  id = addbook>Add Book</a>
+  <a href="#"  id = issuebook>Issue Book</a>
+  <a href="#"  id = deletebook>Delete Book</a>
+  <a href="#"  id = updatebook>Update Book</a>
+  <a href="#"  id = returnbook>Return Book</a>
+  <a href="#"  id = addstudent>Add Student</a>
   <a href="#"  id = "profile">Profile</a>
-  <a href="#"  id = searchbook>Search Book</a>
-  <a href="#"  id = issuedbooks>Issued Books</a>
   <a href="#"  id = logout>Logout</a>
 </div>
 
