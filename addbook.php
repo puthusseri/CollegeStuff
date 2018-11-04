@@ -13,3 +13,23 @@
         </center>
     </form>
 </div>
+<?php
+$bookname = $_POST['bookname'];
+$author   = $_POST['author'];
+$current_date = date("Y/m/d");
+$available = 'Yes';
+    if(isset($bookname)){
+        $sql = "INSERT INTO book (bookname, author, bought_date, available)
+                VALUES ( '$bookname', '$author', $current_date, '$available')";
+                //Check if insert is possible or not
+                if ($conn->query($sql) === TRUE) {
+                    echo "Successfully inserted";
+                }
+                else
+                {
+                    echo "insert failure";
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+                }
+    }
+
+    ?>
