@@ -80,7 +80,7 @@ body {
     margin-right: 16px;
     font-size: 17px;
 }
-input[type = button] {
+input[type = submit] {
   border: none;
   outline: 0;
   display: inline-block;
@@ -91,5 +91,6 @@ input[type = button] {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  border: 2px solid #4CAF50;
 }
 
