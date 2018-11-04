@@ -8,23 +8,15 @@
 		<option id = 2>Author</option>
 		<option id = 3>Number</option>
 	</select>
-	<form  method = post action ="">
+	<form  method = post action ="searchbookby.php">
 		<div id = loadtextbox>
 	
 			<input type= text name = searchname placeholder = "Enter the book name">
 		</div>
 		<br><br>	
-		<input type = submit name="b1" value = Submit>
+		<input type = submit value = Submit>
 	</form>
 </div>
-<?php
-
-	if(isset($_POST['b1'])){ 
-		echo "ok";
-	
-	}
-
-?>
 
 <script>	
 	$(document).ready(function(){
@@ -40,9 +32,7 @@
 	   $("#loadtextbox").load('searchby/number.php');
 	  });
 	  
-	   $("#submit").click(function(){
-	   $("#result").load('searchbookby.php');
-	  });
+	  
 	 
 	  
 	});
