@@ -26,19 +26,19 @@ $available = $row['available'];
 $current_date = date("Y/m/d");
 
     if($available == 'Yes') {
-        $sql = "INSERT INTO borrower (bookname, author, issue_date)
-                VALUES ( '$bookname', '$author', $current_date)";
-                //Check if insert is possible or not
+        $sql = "DELETE FROM book where id = '$id' ";
+                //Check if deletion is possible or not
 
                 if ($conn->query($sql) === TRUE) {
-                    echo "Successfully issued";
-                    $sql = "UPDATE book set available = 'No' where id = '$id' ";
-                    $result = $conn->query($sql);
+                    echo "Successfully removed the book";
                 } else {
                     echo "Error :".$conn->error;
                 }
+            
                 //Also displays the messages on the error in query
 
+    } else {
+            echo "Book '$bookname' is issued to a student . Cannot delete temporarly";
     }
 
 ?>
