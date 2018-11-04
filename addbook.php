@@ -14,6 +14,7 @@
     </form>
 </div>
 <?php
+
 include("config.php");
 $bookname = $_POST['bookname'];
 $author   = $_POST['author'];
