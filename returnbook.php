@@ -31,7 +31,6 @@ $current_date = date("Y/m/d");
                 }
             
                 //Also displays the messages on the error in query
-
     }
 
 ?>
