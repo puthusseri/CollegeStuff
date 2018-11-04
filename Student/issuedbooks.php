@@ -3,7 +3,7 @@ include("config.php");
 
 session_start();
 $id = $_SESSION['id'];
-$sql = "select booknumber from borrower where id = $id;
+$sql = "select booknumber from borrower where id = '$id'";
 $result = $conn->query($sql);
 if (mysqli_num_rows($result) > 0) {
     while ($row = $result->fetch_assoc()) {
