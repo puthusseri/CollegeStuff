@@ -23,21 +23,37 @@
 <script>
 
 $(document).ready(function(){
-  $("#profile").click(function(){
-    $("#main").load('profile.php');
-  });
+    $("#listbooks").click(function(){
+        $("#main").load('listbooks.php');
+    });
   
-  $("#searchbook").click(function(){
-    $("#main").load('searchbook.php');
-  });
+    $("#addbook").click(function(){
+        $("#main").load('addbook.php');
+    });
+    
+    $("#issuebook").click(function(){
+        $("#main").load('issuebook.php');
+    });
+    $("#deletebook").click(function(){
+        $("#main").load('deletebook.php');
+    });
+    $("#updatebook").click(function(){
+        $("#main").load('updatebook.php');
+    });
   
-  $("#issuedbooks").click(function(){
-   $("#main").load('issuedbooks.php');
-  });
-  
-  $("#logout").click(function(){
-   $("#main").load('logout.php');
-  });
+    $("#returnbook").click(function(){
+        $("#main").load('returnbook.php');
+    });
+    
+    $("#addstudent").click(function(){
+        $("#main").load('addstudent.php');
+    });
+    $("#profile").click(function(){
+        $("#main").load('profile.php');
+    });
+    $("#logout").click(function(){
+        $("#main").load('logout.php');
+    });
   
 });
 
