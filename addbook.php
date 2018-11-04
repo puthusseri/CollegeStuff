@@ -22,14 +22,14 @@ $available = 'Yes';
         $sql = "INSERT INTO book (bookname, author, bought_date, available)
                 VALUES ( '$bookname', '$author', $current_date, '$available')";
                 //Check if insert is possible or not
+
                 if ($conn->query($sql) === TRUE) {
                     echo "Successfully inserted";
+                } else {
+                    echo "Error :".$conn->error;
                 }
-                else
-                {
-                    echo "insert failure";
-                    echo "Error: " . $sql . "<br>" . $conn->error;
-                }
+                //Also displays the messages on the error in query
+
     }
 
     ?>
