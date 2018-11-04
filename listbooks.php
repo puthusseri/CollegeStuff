@@ -1,5 +1,6 @@
 <link rel="stylesheet" type="text/css" href="style_for_listbooks.css">
 <?php
+
 include("config.php");
 $sql = "select * from book";
 $result = $conn->query($sql);
